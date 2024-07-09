@@ -20,7 +20,6 @@ Route::prefix('conto-trading')->group(function () {
     Route::get('', [ContoTradingController::class, 'list']);
     Route::post('date-range', [ContoTradingController::class, 'getMovimenti']);
     Route::get('{ContoTradingID}/totali-acquisti-vendite', [ContoTradingController::class, 'totaliAcquistiVendite']);
-
 });
 
 Route::prefix('movimenti')->group(function () {
